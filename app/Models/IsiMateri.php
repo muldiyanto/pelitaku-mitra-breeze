@@ -35,5 +35,9 @@ class IsiMateri extends Model
     {
         return $this->belongsTo(Materi::class);
     }
+    // public function materi(): BelongsTo
+    // {
+    //     return $this->belongsTo(Materi::class);
+    // }
 
 }
