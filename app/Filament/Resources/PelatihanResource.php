@@ -39,6 +39,7 @@ class PelatihanResource extends Resource
                 Card::make()
                     ->schema([
                         TextInput::make('name')
+                        ->label('Nama Pelatihan')
                         ->live(debounce:800)
                         ->afterStateUpdated(fn (Set $set, ?string $state)
                           => $set('slug', Str::slug($state)))
